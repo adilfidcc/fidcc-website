@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/fidccma/public_html/
     - /bin/mkdir -p $DEPLOYPATH/assets
     - /bin/cp -a assets/. $DEPLOYPATH/assets/
-    - /bin/cp 404.html confidentialite.html contact.php index.html mentions-legales.html robots.txt sitemap.xml $DEPLOYPATH
+    - /bin/cp 404.html confidentialite.html contact.php index.html creer-societe-maroc.html mentions-legales.html robots.txt sitemap.xml $DEPLOYPATH
