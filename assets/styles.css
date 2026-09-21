@@ -135,3 +135,37 @@ body:has(link[rel="canonical"][href="https://fidcc.ma/creer-societe-maroc.html"]
     grid-template-columns:minmax(0,1.12fr) minmax(390px,.88fr);
   }
 }
+
+
+/* Accueil — override robuste sans :has() */
+@media(min-width:901px){
+  #accueil .hero-grid{
+    min-height:auto;
+    grid-template-columns:minmax(0,1.08fr) minmax(390px,.92fr);
+    gap:48px;
+    padding-block:44px 52px;
+  }
+  #accueil h1{
+    max-width:820px;
+    margin:14px 0 0;
+    font-size:clamp(2.45rem,3vw,3.35rem);
+    line-height:1.06;
+    letter-spacing:-.025em;
+  }
+  #accueil .lead{
+    max-width:760px;
+    margin-top:20px;
+    font-size:1.04rem;
+    line-height:1.62;
+  }
+  #accueil .actions{margin-top:22px}
+  #accueil .hero-card{
+    width:100%;
+    max-width:520px;
+    justify-self:end;
+    padding:26px 30px;
+  }
+  #accueil .hero-card img{max-height:145px;object-fit:contain}
+  #accueil .hero-card ul{margin-top:18px}
+  #accueil .hero-card li{padding-block:11px}
+}
