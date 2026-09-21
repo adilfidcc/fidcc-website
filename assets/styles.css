@@ -36,3 +36,27 @@ body:has(link[rel="canonical"][href="https://fidcc.ma/creer-societe-maroc.html"]
     font-size:clamp(2.7rem,10vw,4.3rem);
   }
 }
+
+
+/* Accueil — navigation et hero optimisés pour écrans desktop */
+@media(min-width:901px){
+  .container{width:min(1440px,calc(100% - 64px))}
+  .header-inner{height:104px;gap:28px}
+  .brand{flex:0 0 155px}
+  .brand img{width:155px}
+  .main-nav{flex:1;justify-content:flex-end;gap:clamp(14px,1.45vw,26px)}
+  .main-nav a{font-size:clamp(.69rem,.78vw,.82rem);letter-spacing:.075em;white-space:nowrap}
+  .main-nav .nav-cta{white-space:normal;max-width:190px;text-align:center;padding:12px 16px}
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-grid{
+    min-height:590px;
+    grid-template-columns:minmax(0,1fr) minmax(420px,.82fr);
+    gap:72px;
+    padding-block:62px 70px;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero h1{
+    max-width:780px;
+    font-size:clamp(3.25rem,4.8vw,5.25rem);
+    line-height:1.02;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card{max-width:560px;justify-self:end}
+}
