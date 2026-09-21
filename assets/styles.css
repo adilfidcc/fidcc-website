@@ -121,3 +121,17 @@ body:has(link[rel="canonical"][href="https://fidcc.ma/creer-societe-maroc.html"]
   body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card ul{margin-top:18px}
   body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card li{padding-block:11px}
 }
+
+
+/* Accueil — correction finale du H1 desktop */
+@media(min-width:901px){
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero h1{
+    max-width:880px;
+    font-size:clamp(2.55rem,3vw,3.35rem);
+    line-height:1.06;
+    letter-spacing:-.025em;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-grid{
+    grid-template-columns:minmax(0,1.12fr) minmax(390px,.88fr);
+  }
+}
