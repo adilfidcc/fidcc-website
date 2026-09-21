@@ -87,3 +87,37 @@ body:has(link[rel="canonical"][href="https://fidcc.ma/creer-societe-maroc.html"]
     padding:30px;
   }
 }
+
+
+/* Accueil — hero compact : contenu essentiel visible dès le premier écran */
+@media(min-width:901px){
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-grid{
+    min-height:auto;
+    grid-template-columns:minmax(0,1.03fr) minmax(390px,.97fr);
+    gap:54px;
+    padding-block:44px 52px;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero h1{
+    max-width:760px;
+    font-size:clamp(2.8rem,3.55vw,3.95rem);
+    line-height:1.02;
+    margin-top:14px;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero .lead{
+    max-width:760px;
+    margin-top:22px;
+    font-size:1.04rem;
+    line-height:1.62;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero .actions{margin-top:24px}
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card{
+    max-width:520px;
+    padding:26px 30px;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card img{
+    max-height:150px;
+    object-fit:contain;
+  }
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card ul{margin-top:18px}
+  body:has(link[rel="canonical"][href="https://fidcc.ma/"]) .hero-card li{padding-block:11px}
+}
