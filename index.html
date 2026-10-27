@@ -38,6 +38,16 @@
     "description":"Accompagnement comptable, fiscal, social et administratif des entreprises au Maroc."
   }
   </script>
+  <style>
+    .news-archive { margin: .4rem 0; border: 1px solid #e4e8e5; border-radius: .65rem; background: #fff; }
+    .news-archive summary { cursor: pointer; display: flex; align-items: baseline; gap: 1rem; padding: .7rem 1rem; color: #173c2c; }
+    .news-archive summary::before { content: "+"; font-weight: 700; color: #a17a30; }
+    .news-archive[open] summary::before { content: "−"; }
+    .news-date { flex: 0 0 7.5rem; font-size: .78rem; color: #6c746f; }
+    .news-detail { padding: 0 1rem 1rem; }
+    .news-detail h3 { font-size: 1.2rem; }
+    @media (max-width: 600px) { .news-archive summary { flex-wrap: wrap; gap: .3rem .6rem; } .news-date { flex-basis: 6.7rem; } }
+  </style>
 </head>
 
 <body>
@@ -154,59 +164,6 @@
             <p>Un aperçu des mesures fiscales proposées, avec une simulation indicative du gain d’impôt sur les salaires.</p>
             <a class="btn btn-secondary" href="#communique-plf-2027">Lire la synthèse</a>
           </article>
-
-          <article>
-            <span>25 SEPT. 2026</span>
-            <h3>Loi n° 87-21 : un nouveau cadre de résolution bancaire au Maroc</h3>
-            <p>Publiée au Bulletin officiel, édition arabe, la réforme renforce la prévention et le traitement des difficultés des établissements de crédit.</p>
-            <a class="btn btn-secondary" href="#communique-loi-87-21-resolution-bancaire">Lire le communiqué</a>
-          </article>
-
-          <article>
-            <span>24 SEPT. 2026</span>
-            <h3>Bank Al-Maghrib maintient son taux directeur à 2,25 %</h3>
-            <p>Après sa réunion du 22 septembre 2026, la banque centrale laisse son taux directeur inchangé. Les points à suivre pour la trésorerie des entreprises.</p>
-            <a class="btn btn-secondary" href="#communique-taux-directeur-septembre-2026">Lire le communiqué</a>
-          </article>
-
-          <article>
-            <span>18 SEPT. 2026</span>
-            <h3>Nouveau Code de procédure civile au Maroc : ce qui change pour les entreprises</h3>
-            <p>
-              La loi n° 58-25 réforme la procédure civile au Maroc avec notamment
-              davantage de démarches numériques, de nouvelles règles de notification
-              et un suivi renforcé des procédures et de l’exécution des décisions.
-            </p>
-            <a class="btn btn-secondary" href="#communique-procedure-civile">
-              Lire le communiqué
-            </a>
-          </article>
-
-          <article>
-            <span>18 SEPT. 2026</span>
-            <h3>PACTE TPME : 8 dispositifs d’accompagnement pour les entreprises marocaines</h3>
-            <p>
-              Maroc PME propose huit dispositifs d’accompagnement couvrant notamment
-              la croissance, la performance, la décarbonation, la qualité,
-              la transmission et la restructuration des TPME.
-            </p>
-            <a class="btn btn-secondary" href="#communique-pacte-tpme">
-              Lire le communiqué
-            </a>
-          </article>
-
-          <article>
-            <span>14 SEPT. 2026</span>
-            <h3>Cadre juridique des SCI au Maroc</h3>
-            <p>
-              La loi n° 31-18 a renforcé les règles de constitution,
-              d’immatriculation et de fonctionnement des Sociétés Civiles
-              Immobilières au Maroc.
-            </p>
-            <a class="btn btn-secondary" href="#communique-sci">
-              Lire le communiqué
-            </a>
-          </article>
         </div>
 
         <article id="communique-plf-2027" class="cabinet-section" style="margin-top:2rem;">
@@ -221,7 +178,9 @@
           <p><em>Simulation indicative et information générale ; les mesures ne sont pas définitives.</em></p>
         </article>
 
-        <article id="communique-loi-87-21-resolution-bancaire" class="cabinet-section" style="margin-top:2rem;">
+        <details id="communique-loi-87-21-resolution-bancaire" class="news-archive">
+          <summary><span class="news-date">25 sept. 2026</span><strong>Loi n° 87-21 : résolution bancaire</strong></summary>
+          <div class="news-detail">
           <h3>Loi n° 87-21 : renforcement du dispositif de prévention et de résolution des crises bancaires</h3>
           <p><strong>Actualité du 25 septembre 2026.</strong> La loi n° <strong>87-21</strong>, promulguée par le dahir n° <strong>1-26-65 du 28 juillet 2026</strong>, a été publiée au <strong>Bulletin officiel, édition arabe, n° 7533 du 10 août 2026</strong>. Elle modifie et complète la loi n° 103-12 relative aux établissements de crédit et organismes assimilés ainsi que la loi n° 40-17 portant statut de Bank Al-Maghrib.</p>
           <p>Cette réforme met en place un cadre spécifique pour prévenir et traiter les difficultés des établissements de crédit, en complément des mécanismes judiciaires de droit commun.</p>
@@ -230,9 +189,13 @@
           <p><strong>Pour les entreprises :</strong> la réforme ne modifie pas directement les obligations comptables ou fiscales courantes. Elle renforce toutefois le cadre de stabilité du secteur bancaire, la protection des déposants et la gestion des risques susceptibles d’affecter les financements et la trésorerie.</p>
           <p>Source juridique : loi n° 87-21 publiée au Bulletin officiel, édition arabe, n° 7533 du 10 août 2026.</p>
           <p><em>Information générale à apprécier au regard des textes réglementaires d’application et de la situation de chaque établissement ou entreprise.</em></p>
-        </article>
+        
+          </div>
+        </details>
 
-        <article id="communique-taux-directeur-septembre-2026" class="cabinet-section" style="margin-top:2rem;">
+        <details id="communique-taux-directeur-septembre-2026" class="news-archive">
+          <summary><span class="news-date">24 sept. 2026</span><strong>Bank Al-Maghrib : taux directeur à 2,25 %</strong></summary>
+          <div class="news-detail">
           <h3>Bank Al-Maghrib : taux directeur maintenu à 2,25 %</h3>
           <p><strong>Actualité du 24 septembre 2026.</strong> Réuni le 22 septembre 2026, le Conseil de Bank Al-Maghrib a décidé de maintenir le taux directeur à <strong>2,25 %</strong>.</p>
           <p><strong>Pour les entreprises :</strong> cette décision ne garantit pas des conditions de crédit identiques pour tous. Les taux et modalités de financement dépendent aussi des contrats bancaires et du profil de l’emprunteur. Il est utile d’actualiser les prévisions de trésorerie et de suivre les échéances clients et fournisseurs.</p>
@@ -240,9 +203,13 @@
           <p><strong>Conseil FIDCC :</strong> documenter les dates de facturation et de règlement, rapprocher régulièrement les soldes clients et anticiper les retards susceptibles d’affecter la trésorerie ou les obligations déclaratives.</p>
           <p>Sources : <a href="https://www.bkam.ma/Politique-monetaire/Cadre-strategique/Decision-de-la-politique-monetaire/Communiques-de-presse" target="_blank" rel="noopener noreferrer">Bank Al-Maghrib</a> ; <a href="https://www.finances.gov.ma/Publication/depp/2023/note-circulaire734.pdf" target="_blank" rel="noopener noreferrer">note circulaire n° 734 du ministère des Finances</a>.</p>
           <p><em>Information générale à apprécier selon la situation de chaque entreprise.</em></p>
-        </article>
+        
+          </div>
+        </details>
 
-        <article id="communique-procedure-civile" class="cabinet-section" style="margin-top:2rem;">
+        <details id="communique-procedure-civile" class="news-archive">
+          <summary><span class="news-date">18 sept. 2026</span><strong>Nouveau Code de procédure civile</strong></summary>
+          <div class="news-detail">
           <h3>Nouveau Code de procédure civile au Maroc : ce qui change pour les entreprises</h3>
 
           <p>La loi n° <strong>58-25 relative à la procédure civile</strong>, promulguée par le dahir n° 1-26-07 et publiée au Bulletin officiel n° 7485, introduit une réforme importante du fonctionnement de la justice civile au Maroc.</p>
@@ -256,9 +223,13 @@
           <p>FIDCC recommande aux dirigeants de revoir leurs procédures internes de suivi des contentieux, leurs coordonnées contractuelles et le traitement des dossiers de recouvrement avec leurs conseils juridiques.</p>
 
           <p><em>Information à caractère général, ne constituant pas une consultation juridique.</em></p>
-        </article>
+        
+          </div>
+        </details>
 
-        <article id="communique-pacte-tpme" class="cabinet-section" style="margin-top:2rem;">
+        <details id="communique-pacte-tpme" class="news-archive">
+          <summary><span class="news-date">18 sept. 2026</span><strong>PACTE TPME : dispositifs d’accompagnement</strong></summary>
+          <div class="news-detail">
           <h3>PACTE TPME – Les 8 dispositifs d’accompagnement Maroc PME</h3>
 
           <p><strong>PACT’SCALE UP</strong> accompagne les entreprises à fort potentiel de croissance à travers un diagnostic 360° et un plan d’accélération personnalisé. La contribution de Maroc PME peut atteindre 80 % du coût, dans la limite de 2 MDH par bénéficiaire.</p>
@@ -280,9 +251,13 @@
           <p><strong>Éligibilité générale :</strong> les dispositifs concernent notamment les entreprises marocaines de droit privé répondant aux critères de Maroc PME, avec un chiffre d’affaires annuel hors taxes généralement inférieur ou égal à 200 MDH et des règles spécifiques concernant les filiales, groupes, coopératives et projets en amorçage selon le dispositif.</p>
 
           <p>Les conditions définitives d’éligibilité, les dépenses prises en charge et les modalités de candidature doivent être vérifiées auprès de Maroc PME pour chaque dispositif.</p>
-        </article>
+        
+          </div>
+        </details>
 
-        <article id="communique-sci" class="cabinet-section" style="margin-top:2rem;">
+        <details id="communique-sci" class="news-archive">
+          <summary><span class="news-date">14 sept. 2026</span><strong>Cadre juridique des SCI au Maroc</strong></summary>
+          <div class="news-detail">
           <h3>Les principales règles à retenir</h3>
 
           <p>
@@ -305,7 +280,9 @@
             Cette présentation est informative et ne remplace pas une consultation
             juridique personnalisée.
           </p>
-        </article>
+        
+          </div>
+        </details>
       </div>
     </section>
 
